@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,700;0,900;1,400&display=swap');
+
+@font-face {
+    font-family:myFont ;
+    src: url(./font/CHRISTMAS\ DAY-2.otf);
+    font-weight: 900;
+  }
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+/* tipografia*/
+body { 
+    font-family:'Roboto',sans-serif;
+}
+
+h1 { font-family: myFont;
+     color: white;
+     font-weight: 900;
+     font-size: 4.5em;
+     display: flex;
+     justify-content: center;
+     padding: 4vh;
+    }
+
+h2 { font-family: myFont;
+     color: rgb(168, 60, 60);
+     font-weight: 700;
+     height: 13vh;
+     display: flex;
+     align-items:flex-end;
+    }
+
+h3 { color: brown;font-weight: 400; font-style: italic;margin-top: 5%;}
+p {color: black; font-weight: 300;}
+.tiempo,.dificultad {font-weight: 300; font-size:small;margin: 0;}
+
+.dificultad{
+    margin-bottom: 7vh;
+}
+
+h4 {
+    font-weight: 700;
+    color: rgb(255, 249, 241);
+}
+
+/* estructura */
+#encabezado{
+    height: 40vh;
+    background-image: url(./imagen/background-navidad-01.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+#suscribite, #formulario { 
+    font-weight: 300;
+    color: rgb(255, 249, 241);
+    display: flex;
+    flex-direction: column;
+}
+
+label{
+    width: 60%;
+    padding: 10px;
+}
+
+
+button {
+    color:#a83c3c ;
+    width: 100px;
+    height: 5%;
+}
+
+img:hover{
+    filter: opacity(50%);
+}
+
+
+#video{
+    margin-top: 3vh;
+    margin-bottom: 5vh;
+    display: flex;
+    align-content: center;
+    color:#ffe4c4
+}
+
+footer{
+    padding: 40px;
+    background-color: brown;
+    animation:animacion ;
+    animation-duration: 3s;
+    animation-iteration-count:infinite;
+    animation-direction: alternate-reverse;
+}
+
+@keyframes animacion {
+    from {
+        background-color: rgb(85, 40, 40)
+    }
+
+    to {
+        background-color:brown ;
+    }
+}
+
